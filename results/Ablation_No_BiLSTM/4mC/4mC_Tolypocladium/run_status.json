@@ -1,0 +1,12 @@
+{
+  "pipeline": "model_plus",
+  "model_name": "Ablation_No_BiLSTM",
+  "dataset_category": "4mC",
+  "species_name": "4mC_Tolypocladium",
+  "status": "completed",
+  "epochs": 50,
+  "patience": 15,
+  "batch_size": 64,
+  "lr": 0.001,
+  "updated_at": "2026-10-18 18:43:21"
+}

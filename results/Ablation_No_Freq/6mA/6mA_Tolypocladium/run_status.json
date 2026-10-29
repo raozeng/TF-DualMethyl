@@ -1,0 +1,12 @@
+{
+  "pipeline": "model_plus",
+  "model_name": "Ablation_No_Freq",
+  "dataset_category": "6mA",
+  "species_name": "6mA_Tolypocladium",
+  "status": "completed",
+  "epochs": 50,
+  "patience": 15,
+  "batch_size": 64,
+  "lr": 0.001,
+  "updated_at": "2026-10-19 13:42:57"
+}

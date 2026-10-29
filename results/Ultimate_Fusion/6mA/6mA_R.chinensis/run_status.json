@@ -1,0 +1,12 @@
+{
+  "pipeline": "model_plus",
+  "model_name": "Ultimate_Fusion",
+  "dataset_category": "6mA",
+  "species_name": "6mA_R.chinensis",
+  "status": "completed",
+  "epochs": 50,
+  "patience": 25,
+  "batch_size": 64,
+  "lr": 0.001,
+  "updated_at": "2026-10-19 03:07:50"
+}

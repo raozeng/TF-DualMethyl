@@ -1,0 +1,13 @@
+--- 5-Fold Cross Validation Average Results ---
+Average Accuracy: 0.8652
+Average Precision: 0.8556
+Average Recall: 0.8800
+Average Specificity: 0.8505
+Average F1: 0.8671
+Average Mcc: 0.7317
+Average Auc: 0.9366
+Average Auprc: 0.9307
+Average Tp: 1390.2000
+Average Tn: 1343.6000
+Average Fp: 236.2000
+Average Fn: 189.6000

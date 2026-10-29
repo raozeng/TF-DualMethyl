@@ -1,0 +1,15 @@
+========================================================================
+TF-DualMethyl Experiment Packaging Report (2026-10-21 01:16:29)
+========================================================================
+  - Baseline_TextCNN         : 15 datasets completed
+  - Baseline_BiLSTM          : 15 datasets completed
+  - Baseline_CRNN            : 15 datasets completed
+  - Baseline_Transformer     : 15 datasets completed
+  - Ultimate_Fusion          : 15 datasets completed
+  - Ablation_No_BiLSTM       : 15 datasets completed
+  - Ablation_No_Transformer  : 15 datasets completed
+  - Ablation_No_Freq         : 15 datasets completed
+  - Ablation_No_Time         : 15 datasets completed
+------------------------------------------------------------------------
+Total Completed (Model x Dataset) Runs: 135
+========================================================================

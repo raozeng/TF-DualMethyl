@@ -1,0 +1,137 @@
+Class | Dataset             | Model             |    ACC |     SN |     SP |    MCC |    AUC |     F1
+------+---------------------+-------------------+--------+--------+--------+--------+--------+-------
+4mC   | 4mC_C.equisetifolia | BiLSTM            |  77.87 |  75.96 |  79.78 |  55.78 |  87.32 |  77.44
+4mC   | 4mC_C.equisetifolia | CRNN              |  78.69 |  78.14 |  79.23 |  57.38 |  87.74 |  78.57
+4mC   | 4mC_C.equisetifolia | TextCNN           |  75.68 |  73.22 |  78.14 |  51.43 |  86.28 |  75.07
+4mC   | 4mC_C.equisetifolia | Transformer       |  74.86 |  61.20 |  88.52 |  51.69 |  81.99 |  70.89
+4mC   | 4mC_C.equisetifolia | w/o BiLSTM        |  83.61 |  81.42 |  85.79 |  67.28 |  90.43 |  83.24
+4mC   | 4mC_C.equisetifolia | w/o Freq          |  84.15 |  81.42 |  86.89 |  68.41 |  90.70 |  83.71
+4mC   | 4mC_C.equisetifolia | * w/o Time        |  84.97 |  83.61 |  86.34 |  69.97 |  91.48 |  84.76
+4mC   | 4mC_C.equisetifolia | w/o Transformer   |  84.43 |  79.23 |  89.62 |  69.23 |  91.39 |  83.57
+4mC   | 4mC_C.equisetifolia | TF-DualMethyl     |  81.97 |  78.69 |  85.25 |  64.07 |  90.24 |  81.36
+4mC   | 4mC_F.vesca         | BiLSTM            |  83.51 |  86.60 |  80.43 |  67.16 |  91.20 |  84.01
+4mC   | 4mC_F.vesca         | CRNN              |  84.52 |  84.52 |  84.52 |  69.03 |  92.31 |  84.52
+4mC   | 4mC_F.vesca         | TextCNN           |  71.54 |  75.70 |  67.38 |  43.24 |  78.91 |  72.68
+4mC   | 4mC_F.vesca         | Transformer       |  82.94 |  84.39 |  81.49 |  65.91 |  90.81 |  83.18
+4mC   | 4mC_F.vesca         | w/o BiLSTM        |  86.17 |  87.28 |  85.07 |  72.36 |  93.60 |  86.32
+4mC   | 4mC_F.vesca         | w/o Freq          |  86.14 |  88.15 |  84.14 |  72.34 |  93.53 |  86.41
+4mC   | 4mC_F.vesca         | w/o Time          |  85.97 |  86.46 |  85.48 |  71.95 |  93.48 |  86.04
+4mC   | 4mC_F.vesca         | * w/o Transformer |  86.29 |  86.88 |  85.71 |  72.59 |  93.73 |  86.37
+4mC   | 4mC_F.vesca         | TF-DualMethyl     |  86.15 |  87.29 |  85.01 |  72.32 |  93.57 |  86.30
+4mC   | 4mC_S.cerevisiae    | BiLSTM            |  59.35 |  57.23 |  61.48 |  18.72 |  63.49 |  58.47
+4mC   | 4mC_S.cerevisiae    | CRNN              |  61.88 |  56.72 |  67.04 |  23.89 |  66.82 |  59.81
+4mC   | 4mC_S.cerevisiae    | TextCNN           |  60.26 |  56.72 |  63.80 |  20.58 |  63.80 |  58.81
+4mC   | 4mC_S.cerevisiae    | Transformer       |  68.50 |  60.36 |  76.64 |  37.51 |  75.38 |  65.71
+4mC   | 4mC_S.cerevisiae    | w/o BiLSTM        |  71.64 |  65.82 |  77.45 |  43.57 |  78.43 |  69.89
+4mC   | 4mC_S.cerevisiae    | w/o Freq          |  71.23 |  64.81 |  77.65 |  42.82 |  78.70 |  69.26
+4mC   | 4mC_S.cerevisiae    | * w/o Time        |  72.70 |  70.98 |  74.42 |  45.43 |  79.93 |  72.22
+4mC   | 4mC_S.cerevisiae    | w/o Transformer   |  71.28 |  70.88 |  71.69 |  42.57 |  78.60 |  71.17
+4mC   | 4mC_S.cerevisiae    | TF-DualMethyl     |  71.89 |  72.90 |  70.88 |  43.79 |  79.00 |  72.17
+4mC   | 4mC_Tolypocladium   | BiLSTM            |  59.70 |  56.06 |  63.34 |  19.46 |  63.59 |  58.18
+4mC   | 4mC_Tolypocladium   | CRNN              |  71.67 |  73.33 |  70.01 |  43.36 |  78.76 |  72.13
+4mC   | 4mC_Tolypocladium   | TextCNN           |  58.96 |  57.71 |  60.21 |  17.92 |  62.21 |  58.44
+4mC   | 4mC_Tolypocladium   | Transformer       |  69.97 |  67.35 |  72.60 |  40.00 |  76.87 |  69.16
+4mC   | 4mC_Tolypocladium   | w/o BiLSTM        |  75.11 |  75.88 |  74.33 |  50.22 |  83.41 |  75.30
+4mC   | 4mC_Tolypocladium   | w/o Freq          |  75.82 |  75.44 |  76.20 |  51.64 |  83.74 |  75.73
+4mC   | 4mC_Tolypocladium   | w/o Time          |  75.21 |  76.12 |  74.31 |  50.43 |  83.27 |  75.43
+4mC   | 4mC_Tolypocladium   | w/o Transformer   |  75.58 |  77.06 |  74.11 |  51.19 |  83.61 |  75.94
+4mC   | 4mC_Tolypocladium   | * TF-DualMethyl   |  75.92 |  75.30 |  76.54 |  51.84 |  83.90 |  75.77
+6mA   | 6mA_A.thaliana      | BiLSTM            |  84.50 |  81.28 |  87.73 |  69.15 |  92.10 |  83.99
+6mA   | 6mA_A.thaliana      | CRNN              |  85.70 |  84.52 |  86.89 |  71.42 |  93.11 |  85.53
+6mA   | 6mA_A.thaliana      | TextCNN           |  71.36 |  69.95 |  72.76 |  42.73 |  78.62 |  70.95
+6mA   | 6mA_A.thaliana      | Transformer       |  85.23 |  82.18 |  88.29 |  70.60 |  92.61 |  84.77
+6mA   | 6mA_A.thaliana      | w/o BiLSTM        |  86.65 |  85.20 |  88.11 |  73.34 |  93.95 |  86.46
+6mA   | 6mA_A.thaliana      | * w/o Freq        |  86.89 |  83.76 |  90.02 |  73.93 |  94.06 |  86.47
+6mA   | 6mA_A.thaliana      | w/o Time          |  86.68 |  85.63 |  87.73 |  73.37 |  93.95 |  86.54
+6mA   | 6mA_A.thaliana      | w/o Transformer   |  86.76 |  84.00 |  89.51 |  73.63 |  94.01 |  86.38
+6mA   | 6mA_A.thaliana      | TF-DualMethyl     |  86.82 |  84.42 |  89.22 |  73.72 |  94.01 |  86.50
+6mA   | 6mA_C.elegans       | BiLSTM            |  84.94 |  87.49 |  82.39 |  69.97 |  92.04 |  85.31
+6mA   | 6mA_C.elegans       | CRNN              |  89.06 |  89.70 |  88.42 |  78.12 |  95.31 |  89.13
+6mA   | 6mA_C.elegans       | TextCNN           |  72.44 |  72.89 |  71.98 |  44.88 |  80.33 |  72.56
+6mA   | 6mA_C.elegans       | Transformer       |  86.21 |  87.64 |  84.77 |  72.44 |  93.68 |  86.40
+6mA   | 6mA_C.elegans       | w/o BiLSTM        |  91.95 |  91.81 |  92.09 |  83.89 |  97.01 |  91.94
+6mA   | 6mA_C.elegans       | w/o Freq          |  91.93 |  92.86 |  91.01 |  83.88 |  97.08 |  92.01
+6mA   | 6mA_C.elegans       | * w/o Time        |  92.40 |  94.45 |  90.35 |  84.87 |  97.28 |  92.55
+6mA   | 6mA_C.elegans       | w/o Transformer   |  91.71 |  93.59 |  89.82 |  83.48 |  97.21 |  91.86
+6mA   | 6mA_C.elegans       | TF-DualMethyl     |  92.06 |  93.32 |  90.80 |  84.15 |  97.19 |  92.16
+6mA   | 6mA_C.equisetifolia | BiLSTM            |  59.96 |  60.44 |  59.48 |  19.92 |  64.51 |  60.15
+6mA   | 6mA_C.equisetifolia | CRNN              |  65.27 |  63.67 |  66.86 |  30.55 |  70.71 |  64.70
+6mA   | 6mA_C.equisetifolia | TextCNN           |  59.91 |  57.30 |  62.51 |  19.84 |  64.62 |  58.84
+6mA   | 6mA_C.equisetifolia | Transformer       |  70.90 |  65.45 |  76.36 |  42.06 |  77.97 |  69.22
+6mA   | 6mA_C.equisetifolia | w/o BiLSTM        |  74.83 |  74.35 |  75.30 |  49.66 |  82.14 |  74.71
+6mA   | 6mA_C.equisetifolia | * w/o Freq        |  75.07 |  69.86 |  80.28 |  50.42 |  82.35 |  73.70
+6mA   | 6mA_C.equisetifolia | w/o Time          |  74.74 |  72.77 |  76.72 |  49.53 |  82.52 |  74.23
+6mA   | 6mA_C.equisetifolia | w/o Transformer   |  74.63 |  70.16 |  79.10 |  49.46 |  82.34 |  73.44
+6mA   | 6mA_C.equisetifolia | TF-DualMethyl     |  75.02 |  74.91 |  75.14 |  50.05 |  82.68 |  75.00
+6mA   | 6mA_D.melanogaster  | BiLSTM            |  89.38 |  88.60 |  90.17 |  78.78 |  95.40 |  89.30
+6mA   | 6mA_D.melanogaster  | CRNN              |  91.33 |  91.17 |  91.49 |  82.66 |  96.51 |  91.32
+6mA   | 6mA_D.melanogaster  | TextCNN           |  76.46 |  75.12 |  77.80 |  52.94 |  84.10 |  76.14
+6mA   | 6mA_D.melanogaster  | Transformer       |  90.90 |  90.03 |  91.78 |  81.82 |  96.36 |  90.82
+6mA   | 6mA_D.melanogaster  | * w/o BiLSTM      |  93.08 |  91.74 |  94.42 |  86.20 |  97.50 |  92.99
+6mA   | 6mA_D.melanogaster  | w/o Freq          |  92.76 |  92.39 |  93.14 |  85.53 |  97.22 |  92.73
+6mA   | 6mA_D.melanogaster  | w/o Time          |  92.76 |  91.99 |  93.53 |  85.53 |  97.36 |  92.71
+6mA   | 6mA_D.melanogaster  | w/o Transformer   |  92.72 |  92.64 |  92.80 |  85.43 |  97.29 |  92.71
+6mA   | 6mA_D.melanogaster  | TF-DualMethyl     |  92.98 |  92.73 |  93.24 |  85.97 |  97.34 |  92.97
+6mA   | 6mA_F.vesca         | BiLSTM            |  84.11 |  82.01 |  86.20 |  68.27 |  91.52 |  83.77
+6mA   | 6mA_F.vesca         | CRNN              |  91.13 |  90.01 |  92.26 |  82.29 |  96.39 |  91.03
+6mA   | 6mA_F.vesca         | TextCNN           |  80.11 |  80.72 |  79.50 |  60.22 |  87.97 |  80.23
+6mA   | 6mA_F.vesca         | Transformer       |  91.91 |  93.04 |  90.78 |  83.84 |  97.19 |  92.00
+6mA   | 6mA_F.vesca         | w/o BiLSTM        |  93.97 |  94.26 |  93.68 |  87.94 |  98.12 |  93.99
+6mA   | 6mA_F.vesca         | w/o Freq          |  93.71 |  94.84 |  92.59 |  87.45 |  97.86 |  93.78
+6mA   | 6mA_F.vesca         | * w/o Time        |  94.07 |  93.55 |  94.58 |  88.14 |  98.08 |  94.04
+6mA   | 6mA_F.vesca         | w/o Transformer   |  93.42 |  93.29 |  93.55 |  86.85 |  97.86 |  93.42
+6mA   | 6mA_F.vesca         | TF-DualMethyl     |  93.49 |  93.68 |  93.29 |  86.98 |  97.72 |  93.50
+6mA   | 6mA_H.sapiens       | BiLSTM            |  88.57 |  85.87 |  91.26 |  77.25 |  95.65 |  88.25
+6mA   | 6mA_H.sapiens       | CRNN              |  90.24 |  89.01 |  91.46 |  80.50 |  96.61 |  90.12
+6mA   | 6mA_H.sapiens       | TextCNN           |  80.07 |  78.52 |  81.62 |  60.17 |  88.63 |  79.76
+6mA   | 6mA_H.sapiens       | Transformer       |  89.28 |  87.81 |  90.74 |  78.59 |  95.89 |  89.12
+6mA   | 6mA_H.sapiens       | w/o BiLSTM        |  90.93 |  90.62 |  91.24 |  81.86 |  96.92 |  90.90
+6mA   | 6mA_H.sapiens       | w/o Freq          |  90.90 |  88.74 |  93.05 |  81.87 |  97.00 |  90.70
+6mA   | 6mA_H.sapiens       | w/o Time          |  91.07 |  89.67 |  92.47 |  82.17 |  97.10 |  90.94
+6mA   | 6mA_H.sapiens       | * w/o Transformer |  91.15 |  89.82 |  92.48 |  82.34 |  97.04 |  91.03
+6mA   | 6mA_H.sapiens       | TF-DualMethyl     |  91.14 |  88.94 |  93.33 |  82.35 |  97.14 |  90.94
+6mA   | 6mA_R.chinensis     | BiLSTM            |  67.39 |  64.21 |  70.57 |  34.85 |  73.46 |  66.32
+6mA   | 6mA_R.chinensis     | CRNN              |  68.90 |  68.23 |  69.57 |  37.80 |  74.71 |  68.69
+6mA   | 6mA_R.chinensis     | TextCNN           |  72.74 |  73.91 |  71.57 |  45.50 |  78.75 |  73.06
+6mA   | 6mA_R.chinensis     | Transformer       |  73.24 |  75.25 |  71.24 |  46.53 |  81.50 |  73.77
+6mA   | 6mA_R.chinensis     | * w/o BiLSTM      |  82.94 |  84.62 |  81.27 |  65.92 |  90.96 |  83.22
+6mA   | 6mA_R.chinensis     | * w/o Freq        |  82.94 |  81.94 |  83.95 |  65.90 |  90.57 |  82.77
+6mA   | 6mA_R.chinensis     | w/o Time          |  81.61 |  77.59 |  85.62 |  63.42 |  90.10 |  80.84
+6mA   | 6mA_R.chinensis     | w/o Transformer   |  81.27 |  80.94 |  81.61 |  62.54 |  90.00 |  81.21
+6mA   | 6mA_R.chinensis     | TF-DualMethyl     |  82.11 |  77.26 |  86.96 |  64.52 |  90.41 |  81.20
+6mA   | 6mA_S.cerevisiae    | BiLSTM            |  67.25 |  67.14 |  67.35 |  34.50 |  74.18 |  67.21
+6mA   | 6mA_S.cerevisiae    | CRNN              |  77.23 |  76.86 |  77.60 |  54.47 |  85.30 |  77.15
+6mA   | 6mA_S.cerevisiae    | TextCNN           |  67.88 |  62.92 |  72.85 |  35.94 |  74.69 |  66.20
+6mA   | 6mA_S.cerevisiae    | Transformer       |  78.87 |  76.12 |  81.62 |  57.83 |  86.83 |  78.27
+6mA   | 6mA_S.cerevisiae    | w/o BiLSTM        |  82.30 |  79.50 |  85.10 |  64.71 |  90.53 |  81.79
+6mA   | 6mA_S.cerevisiae    | w/o Freq          |  82.12 |  77.13 |  87.11 |  64.56 |  90.22 |  81.18
+6mA   | 6mA_S.cerevisiae    | * w/o Time        |  82.83 |  77.76 |  87.90 |  66.00 |  90.54 |  81.91
+6mA   | 6mA_S.cerevisiae    | w/o Transformer   |  81.48 |  79.93 |  83.04 |  63.00 |  90.26 |  81.19
+6mA   | 6mA_S.cerevisiae    | TF-DualMethyl     |  81.91 |  79.24 |  84.57 |  63.91 |  90.34 |  81.41
+6mA   | 6mA_T.thermophile   | BiLSTM            |  88.24 |  94.49 |  82.00 |  77.09 |  94.44 |  88.93
+6mA   | 6mA_T.thermophile   | CRNN              |  88.52 |  94.94 |  82.09 |  77.68 |  94.69 |  89.21
+6mA   | 6mA_T.thermophile   | TextCNN           |  67.61 |  68.67 |  66.54 |  35.23 |  74.29 |  67.95
+6mA   | 6mA_T.thermophile   | Transformer       |  86.38 |  92.59 |  80.16 |  73.33 |  92.81 |  87.18
+6mA   | 6mA_T.thermophile   | w/o BiLSTM        |  88.47 |  94.82 |  82.12 |  77.57 |  94.66 |  89.16
+6mA   | 6mA_T.thermophile   | w/o Freq          |  88.56 |  95.50 |  81.61 |  77.87 |  94.83 |  89.30
+6mA   | 6mA_T.thermophile   | * w/o Time        |  88.59 |  95.32 |  81.86 |  77.89 |  94.78 |  89.31
+6mA   | 6mA_T.thermophile   | w/o Transformer   |  88.55 |  95.22 |  81.87 |  77.79 |  94.81 |  89.26
+6mA   | 6mA_T.thermophile   | TF-DualMethyl     |  88.57 |  95.31 |  81.83 |  77.85 |  94.79 |  89.29
+6mA   | 6mA_Tolypocladium   | BiLSTM            |  61.72 |  64.36 |  59.09 |  23.48 |  66.65 |  62.71
+6mA   | 6mA_Tolypocladium   | CRNN              |  63.94 |  66.96 |  60.92 |  27.94 |  69.78 |  65.00
+6mA   | 6mA_Tolypocladium   | TextCNN           |  64.03 |  72.00 |  56.07 |  28.43 |  70.40 |  66.68
+6mA   | 6mA_Tolypocladium   | Transformer       |  75.22 |  71.05 |  79.40 |  50.62 |  82.07 |  74.14
+6mA   | 6mA_Tolypocladium   | w/o BiLSTM        |  77.77 |  78.63 |  76.91 |  55.54 |  85.82 |  77.96
+6mA   | 6mA_Tolypocladium   | w/o Freq          |  78.54 |  76.73 |  80.34 |  57.11 |  86.41 |  78.14
+6mA   | 6mA_Tolypocladium   | * w/o Time        |  78.83 |  78.57 |  79.10 |  57.67 |  86.73 |  78.78
+6mA   | 6mA_Tolypocladium   | w/o Transformer   |  78.48 |  79.51 |  77.44 |  56.97 |  86.27 |  78.70
+6mA   | 6mA_Tolypocladium   | TF-DualMethyl     |  78.06 |  79.57 |  76.55 |  56.15 |  85.84 |  78.39
+6mA   | 6mA_Xoc BLS256      | BiLSTM            |  85.47 |  84.56 |  86.43 |  70.96 |  92.78 |  85.64
+6mA   | 6mA_Xoc BLS256      | CRNN              |  87.27 |  86.45 |  88.13 |  74.56 |  94.38 |  87.44
+6mA   | 6mA_Xoc BLS256      | TextCNN           |  70.52 |  66.79 |  74.44 |  41.31 |  78.55 |  69.90
+6mA   | 6mA_Xoc BLS256      | Transformer       |  84.97 |  85.04 |  84.90 |  69.93 |  92.72 |  85.29
+6mA   | 6mA_Xoc BLS256      | w/o BiLSTM        |  88.92 |  88.36 |  89.51 |  77.85 |  95.72 |  89.10
+6mA   | 6mA_Xoc BLS256      | w/o Freq          |  89.23 |  88.56 |  89.94 |  78.47 |  95.86 |  89.39
+6mA   | 6mA_Xoc BLS256      | w/o Time          |  89.12 |  87.68 |  90.64 |  78.30 |  95.80 |  89.20
+6mA   | 6mA_Xoc BLS256      | w/o Transformer   |  89.03 |  89.67 |  88.35 |  78.04 |  95.81 |  89.33
+6mA   | 6mA_Xoc BLS256      | * TF-DualMethyl   |  89.36 |  89.32 |  89.39 |  78.70 |  95.98 |  89.58
